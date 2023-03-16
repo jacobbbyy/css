@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Restaurant Suggester</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+     <!-- FontAwesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <!-- Stylesheet -->
+     <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <h1>Restaurant Generator in Seri Iskandar</h1>
+    <section>
+      <div class="tile">
+        <input type="checkbox" name="cuisine" id="fastfood">
+        <label for="fastfood">
+            <i class="fas fa-hamburger"></i>
+            <h6>FastFood</h6>
+        </label>
+    </div>
+    <div class="tile">
+        <input type="checkbox" name="cuisine" id="local" value="local">
+        <label for="local">
+            <i class="fas fa-map-pin"></i>
+            <h6>Local</h6>
+        </label>
+    </div>
+    <div class="tile">
+        <input type="checkbox" name="cuisine" id="western" value="western">
+        <label for="western">
+            <i class="fas fa-plane-departure"></i>
+            <h6>Western</h6>
+        </label>
+    </div>
+    <div class="tile">
+        <input type="checkbox" name="cuisine" id="cafe" value="cafe">
+        <label for="cafe">
+            <i class="fas fa-coffee"></i>
+            <h6>Cafe</h6>
+        </label>
+    </div>
+    <div class="tile">
+        <input type="checkbox" name="cuisine" id="arab" value="arab">
+        <label for="arab">
+            <i class="fas fa-kaaba"></i>
+            <h6>Arab</h6>
+        </label>
+    </div>  
+    <div class="applybtn">
+    <button onclick="applyFilters()">Apply Filters</button>  
+    <div class="result">
+    </div>
+
+        <!-- Restaurants will be dynamically added here -->
+      </ul><div class="result__btn">
+        <h2>YOUR CHOICE WILL BE:</h2><ul id="restaurantList">
+        </div>
+      <button id="randomBtn">Randomize</button>
+      <div></div>
+    </div>
+    </section>
+    <script src="app.js"></script>
+
+  </body>
+</html>
